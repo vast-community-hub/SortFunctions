@@ -22,10 +22,29 @@ employees asSortedCollection: #salary descending, [:each | each supervisor ] asc
 employees asSortedCollection: #salary descending, #hasBonus asSortFunction
 ```
 
+## Installation
+
+### Using Tonel Support
+Clone this repository in your local filesystem, load the `ST: Tonel Support` feature in VAST 12 or newer, and then evaluate: 
+
+```smalltalk
+| loader |
+loader := TonelLoader readFromPath: (CfsPath named: 'path-to-cloned-repo').
+loader
+	beUnattended;
+	useGitVersion.
+loader loadAllMapsWithRequiredMaps.
+```
+We provide convenience scripts for this in the `scripts` directory, both for importing from a Tonel repository and exporting to it.
+
+### Using exported binary apps
+
+Import and load the `SortFunctionsCore` and `SortFunctionsTest` apps or the `SortFunctions` configuration map in the `envy\SortFunctions.dat` file in this repository.
+
 ## Main concepts
 
 ### Three way comparison
-Collation is performed by means of doing a three way comparison where if an _objectA_ is less than _objectB_  the comparison will return -1, if they're equal it will return 0 and if _objectB_ is greater than _objectA_ it will return 1.
+Collation is performed by means of doing a [three way comparison](https://en.wikipedia.org/wiki/Three-way_comparison) where if an _objectA_ is less than _objectB_  the comparison will return -1, if they're equal it will return 0 and if _objectB_ is greater than _objectA_ it will return 1.
 
 If you want to be able to compare objects within sort functions they need to be able to respond to the `#threeWayCompareTo:` message using the criteria described above.
 

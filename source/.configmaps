@@ -1,0 +1,22 @@
+[
+	{
+		#conditions : [ ],
+		#ts : 3884244076,
+		#comment : '',
+		#formatVersion : '1.1',
+		#applications : OrderedCollection [
+			{
+				#name : 'SortFunctionsCore',
+				#versionName : '0.2',
+				#ts : 3884244044
+			},
+			{
+				#name : 'SortFunctionsTests',
+				#versionName : '0.1',
+				#ts : 3883466622
+			}
+		],
+		#name : 'SortFunctions',
+		#versionName : '0.2'
+	}
+]

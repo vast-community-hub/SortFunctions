@@ -15,15 +15,6 @@ UnicodeString class >> compare: string1 with: string2 collated: order [
 { #category : 'Not categorized' }
 UnicodeString >> compare: string1 with: string2 collated: order [
 
-	"'abc' = 'abc' asWideString >>> true"
-	"'abc' asWideString = 'abc' >>> true"
-	"(ByteArray with: 97 with: 0 with: 0 with: 0) asString ~= 'a000' asWideString >>> true"
-	"('abc' sameAs: 'aBc' asWideString) >>> true"
-	"('aBc' asWideString sameAs: 'abc') >>> true"
-	"('a000' asWideString ~= (ByteArray with: 97 with: 0 with: 0 with: 0) asString) >>> true"
-	"((ByteArray with: 97 with: 0 with: 0 with: 0) asString sameAs: 'Abcd' asWideString) >>> false"
-	"('a000' asWideString sameAs: (ByteArray with: 97 with: 0 with: 0 with: 0) asString) >>> false"
-
 	^UnicodeString compare: string1 asUnicodeString with: string2 asUnicodeString collated: order
 ]
 
