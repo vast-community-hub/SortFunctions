@@ -25,7 +25,7 @@ employees asSortedCollection: #salary descending, #hasBonus asSortFunction
 ## Installation
 
 ### Using Tonel Support
-Clone this repository in your local filesystem, load the `ST: Tonel Support` feature in VAST 12 or newer, and then evaluate: 
+Clone this repository in your local filesystem, load the `ST: Tonel Support` and `ST: SUnit` features in VAST 12 or newer, and then evaluate: 
 
 ```smalltalk
 | loader |
@@ -39,7 +39,7 @@ We provide convenience scripts for this in the `scripts` directory, both for imp
 
 ### Using exported binary apps
 
-Import and load the `SortFunctionsCore` and `SortFunctionsTest` apps or the `SortFunctions` configuration map in the `envy\SortFunctions.dat` file in this repository.
+Load the `ST: SUnit` feature and then import and load the `SortFunctions` configuration map in the `envy\SortFunctions.dat` file in this repository.
 
 ## Main concepts
 
