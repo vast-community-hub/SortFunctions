@@ -1,4 +1,4 @@
 Package {
 	#name : 'SortFunctions-Core',
-	#vaPrerequisites : ['PharoCompatibilityApp']
+	#vaPrerequisites : ['Kernel']
 }

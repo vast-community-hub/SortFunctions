@@ -1,22 +1,27 @@
 [
 	{
-		#conditions : [ ],
-		#ts : 3884244076,
+		#conditions : [
+			{
+				#condition : 'true',
+				#requiredMaps : [ ]
+			}
+		],
+		#ts : 3884245708,
 		#comment : '',
 		#formatVersion : '1.1',
 		#applications : OrderedCollection [
 			{
 				#name : 'SortFunctionsCore',
-				#versionName : '0.2',
-				#ts : 3884244044
+				#versionName : '0.4',
+				#ts : 3884246019
 			},
 			{
 				#name : 'SortFunctionsTests',
-				#versionName : '0.1',
-				#ts : 3883466622
+				#versionName : '0.2',
+				#ts : 3884246232
 			}
 		],
 		#name : 'SortFunctions',
-		#versionName : '0.2'
+		#versionName : '0.4'
 	}
 ]

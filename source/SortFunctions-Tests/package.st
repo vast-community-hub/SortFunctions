@@ -1,4 +1,4 @@
 Package {
 	#name : 'SortFunctions-Tests',
-	#vaPrerequisites : ['SUnit']
+	#vaPrerequisites : ['SortFunctionsCore','SUnit']
 }
