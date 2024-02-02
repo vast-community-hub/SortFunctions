@@ -51,3 +51,15 @@ ThreeWayComparisonTest >> testStrings [
 	self assert: (a threeWayCompareTo: d) equals: 1.
 	self assert: (d threeWayCompareTo: a) equals: -1
 ]
+
+{ #category : 'tests' }
+ThreeWayComparisonTest >> testUnicodeStrings [
+
+	self assert: ('ABC' threeWayCompareTo: 'ABC' asUnicodeString) equals: 0.
+	self assert: ('ABC' threeWayCompareTo: 'ABD' asUnicodeString) equals: -1.
+	self assert: ('ABC' threeWayCompareTo: 'ABB' asUnicodeString) equals: 1.
+
+	self assert: ('ABC' asUnicodeString threeWayCompareTo: 'ABC') equals: 0.
+	self assert: ('ABC' asUnicodeString threeWayCompareTo: 'ABD') equals: -1.
+	self assert: ('ABC' asUnicodeString threeWayCompareTo: 'ABB') equals: 1
+]

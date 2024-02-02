@@ -6,22 +6,22 @@
 				#requiredMaps : [ ]
 			}
 		],
-		#ts : 3884245708,
+		#ts : 3884338758,
 		#comment : '',
 		#formatVersion : '1.1',
 		#applications : OrderedCollection [
 			{
 				#name : 'SortFunctionsCore',
-				#versionName : '0.4',
-				#ts : 3884246019
+				#versionName : '0.5',
+				#ts : 3884337816
 			},
 			{
 				#name : 'SortFunctionsTests',
-				#versionName : '0.2',
-				#ts : 3884246232
+				#versionName : '0.5',
+				#ts : 3884338618
 			}
 		],
 		#name : 'SortFunctions',
-		#versionName : '0.4'
+		#versionName : '0.5'
 	}
 ]
