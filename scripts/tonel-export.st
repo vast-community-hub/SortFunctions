@@ -1,7 +1,8 @@
 | writer path |
-path := (CfsPath named: '<insert path to root sortfunctions local repo here>').
+path := (CfsPath named: 'path/to/repository').
 writer := TonelWriter new.
 writer
 	addLatestConfigurationMapNamed: 'SortFunctions';
+	addLatestConfigurationMapNamed: 'Test SortFunctions';
 	addApplicationsFromConfigurationMaps.
 writer writeProjectInto: path.

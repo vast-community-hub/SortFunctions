@@ -6,7 +6,7 @@
 				#requiredMaps : [ ]
 			}
 		],
-		#ts : 3884338758,
+		#ts : 3912664192,
 		#comment : '',
 		#formatVersion : '1.1',
 		#applications : OrderedCollection [
@@ -14,14 +14,24 @@
 				#name : 'SortFunctionsCore',
 				#versionName : '0.5',
 				#ts : 3884337816
-			},
+			}
+		],
+		#name : 'SortFunctions',
+		#versionName : '1.0'
+	},
+	{
+		#conditions : [ ],
+		#ts : 3912664205,
+		#comment : '',
+		#formatVersion : '1.1',
+		#applications : OrderedCollection [
 			{
 				#name : 'SortFunctionsTests',
 				#versionName : '0.5',
 				#ts : 3884338618
 			}
 		],
-		#name : 'SortFunctions',
-		#versionName : '0.5'
+		#name : 'Test SortFunctions',
+		#versionName : '1.0'
 	}
 ]
